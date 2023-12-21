@@ -1,4 +1,4 @@
-package com.example.demo.web;
+package com.example.demo.presentation;
 
 import com.example.demo.application.StudentDto;
 import org.springframework.web.bind.annotation.GetMapping;
