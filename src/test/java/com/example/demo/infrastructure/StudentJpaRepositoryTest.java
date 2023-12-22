@@ -32,6 +32,7 @@ class StudentJpaRepositoryTest extends AbstractTestcontainers {
     @DisplayName("should throw out of memory error")
     void shouldThrowOutOfMemoryError() {
         assertThatThrownBy(() -> studentJpaRepository.findAll())
+                .isInstanceOf(RuntimeException.class)
                 .hasCauseInstanceOf(OutOfMemoryError.class)
                 .hasMessage("java.lang.OutOfMemoryError: Java heap space");
     }
