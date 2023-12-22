@@ -17,4 +17,9 @@ public class StudentController {
     public List<StudentDto> getStudent() {
         return studentService.getStudents();
     }
+
+    @GetMapping("/10students")
+    public List<StudentDto> get10Student() {
+        return studentService.get10Students();
+    }
 }
