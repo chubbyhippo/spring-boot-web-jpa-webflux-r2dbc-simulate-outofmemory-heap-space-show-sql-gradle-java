@@ -18,4 +18,10 @@ public class StudentService {
                 .toList();
     }
 
+    public List<StudentDto> get10Students() {
+        return studentRepository.find10Students()
+                .stream()
+                .map(StudentMapper::toDto)
+                .toList();
+    }
 }
