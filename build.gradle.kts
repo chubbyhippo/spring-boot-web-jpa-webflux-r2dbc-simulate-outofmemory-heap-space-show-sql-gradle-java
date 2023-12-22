@@ -41,3 +41,7 @@ tasks.withType<Test> {
 	maxHeapSize = "64m"
 	useJUnitPlatform()
 }
+
+tasks.withType<BootRun> {
+	maxHeapSize = "64m"
+}
