@@ -3,6 +3,7 @@ package com.example.demo.infrastructure;
 import com.example.demo.domain.Student;
 import com.example.demo.domain.StudentRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Repository;
 
@@ -10,6 +11,7 @@ import java.util.List;
 
 @Repository
 @RequiredArgsConstructor
+@Qualifier("jpaRepository")
 public class StudentRepositoryImpl implements StudentRepository {
 
     private final StudentJpaRepository studentJpaRepository;
