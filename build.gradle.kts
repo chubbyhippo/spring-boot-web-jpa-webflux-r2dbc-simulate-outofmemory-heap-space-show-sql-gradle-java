@@ -35,7 +35,6 @@ dependencies {
 	testImplementation("org.springframework.boot:spring-boot-testcontainers")
 	testImplementation("org.testcontainers:junit-jupiter")
 	testImplementation("org.testcontainers:postgresql")
-	testImplementation("org.springframework.boot:spring-boot-starter-webflux")
 	testImplementation("io.projectreactor:reactor-test")
 }
 
