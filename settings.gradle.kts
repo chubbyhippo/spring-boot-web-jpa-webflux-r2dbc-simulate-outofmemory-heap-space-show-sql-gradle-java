@@ -1,1 +1,2 @@
-rootProject.name = "jpa"
+rootProject.name = "simulate"
+include("jpa")
