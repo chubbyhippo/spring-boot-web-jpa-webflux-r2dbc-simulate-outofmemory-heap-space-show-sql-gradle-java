@@ -1,7 +1,7 @@
-package com.example.demo.infrastructure;
+package io.github.chubbyhippo.demo.infrastructure;
 
-import com.example.demo.domain.Student;
-import com.example.demo.domain.StudentRepository;
+import io.github.chubbyhippo.demo.domain.Student;
+import io.github.chubbyhippo.demo.domain.StudentRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.data.domain.PageRequest;
