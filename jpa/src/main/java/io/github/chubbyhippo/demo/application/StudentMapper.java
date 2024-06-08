@@ -1,6 +1,6 @@
-package com.example.demo.application;
+package io.github.chubbyhippo.demo.application;
 
-import com.example.demo.domain.Student;
+import io.github.chubbyhippo.demo.domain.Student;
 
 public class StudentMapper {
     private StudentMapper() {

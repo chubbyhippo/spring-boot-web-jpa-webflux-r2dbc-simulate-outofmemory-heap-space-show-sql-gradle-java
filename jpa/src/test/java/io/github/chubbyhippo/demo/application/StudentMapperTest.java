@@ -1,9 +1,10 @@
-package com.example.demo.application;
+package io.github.chubbyhippo.demo.application;
 
-import com.example.demo.domain.Student;
+import io.github.chubbyhippo.demo.application.StudentDto;
+import io.github.chubbyhippo.demo.domain.Student;
 import org.junit.jupiter.api.Test;
 
-import static com.example.demo.application.StudentMapper.toDto;
+import static io.github.chubbyhippo.demo.application.StudentMapper.toDto;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class StudentMapperTest {
