@@ -1,7 +1,7 @@
-package com.example.demo.presentation;
+package io.github.chubbyhippo.demo.presentation;
 
-import com.example.demo.application.StudentDto;
-import com.example.demo.application.StudentService;
+import io.github.chubbyhippo.demo.application.StudentDto;
+import io.github.chubbyhippo.demo.application.StudentService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

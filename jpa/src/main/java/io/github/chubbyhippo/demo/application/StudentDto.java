@@ -1,4 +1,4 @@
-package com.example.demo.application;
+package io.github.chubbyhippo.demo.application;
 
 import lombok.Builder;
 

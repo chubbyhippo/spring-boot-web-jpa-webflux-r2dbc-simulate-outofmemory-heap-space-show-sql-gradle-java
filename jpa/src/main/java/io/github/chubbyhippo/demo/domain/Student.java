@@ -1,4 +1,4 @@
-package com.example.demo.domain;
+package io.github.chubbyhippo.demo.domain;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
