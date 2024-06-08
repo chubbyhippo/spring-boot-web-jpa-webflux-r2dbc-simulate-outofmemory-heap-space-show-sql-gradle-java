@@ -1,6 +1,6 @@
-package com.example.demo.infrastructure;
+package io.github.chubbyhippo.demo.infrastructure;
 
-import com.example.demo.AbstractTestcontainers;
+import io.github.chubbyhippo.demo.AbstractTestcontainers;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
