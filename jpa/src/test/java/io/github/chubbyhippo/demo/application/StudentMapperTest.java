@@ -1,6 +1,5 @@
 package io.github.chubbyhippo.demo.application;
 
-import io.github.chubbyhippo.demo.application.StudentDto;
 import io.github.chubbyhippo.demo.domain.Student;
 import org.junit.jupiter.api.Test;
 
