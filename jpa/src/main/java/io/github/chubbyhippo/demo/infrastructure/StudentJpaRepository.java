@@ -10,8 +10,8 @@ import java.util.stream.Stream;
 
 public interface StudentJpaRepository extends JpaRepository<Student, Long> {
 
-//    @Query("SELECT s FROM Student s")
+    //    @Query("SELECT s FROM Student s")
     @Query(value = "select * from student", nativeQuery = true)
     @QueryHints(value = {@QueryHint(name = "org.hibernate.fetchSize", value = "10")})
-    Stream<Student> findAllWithStream();
+    Stream<Student> findAllStudents();
 }
