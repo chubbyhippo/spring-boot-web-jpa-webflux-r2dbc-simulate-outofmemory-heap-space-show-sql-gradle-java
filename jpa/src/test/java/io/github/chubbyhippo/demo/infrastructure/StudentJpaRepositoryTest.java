@@ -33,6 +33,6 @@ class StudentJpaRepositoryTest {
     @Test
     @DisplayName("should be able to run")
     void shouldBeAbleToRun() {
-        assertThatNoException().isThrownBy(() -> studentJpaRepository.findAllWithStream());
+        assertThatNoException().isThrownBy(() -> studentJpaRepository.findAllStudents());
     }
 }
