@@ -8,6 +8,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.stream.Stream;
 
 @Repository
 @RequiredArgsConstructor
@@ -27,5 +28,10 @@ public class StudentRepositoryImpl implements StudentRepository {
         return studentJpaRepository.findAll(pageRequest)
                 .stream()
                 .toList();
+    }
+
+    @Override
+    public Stream<Student> findAllStudents() {
+        return studentJpaRepository.findAllStudents();
     }
 }
