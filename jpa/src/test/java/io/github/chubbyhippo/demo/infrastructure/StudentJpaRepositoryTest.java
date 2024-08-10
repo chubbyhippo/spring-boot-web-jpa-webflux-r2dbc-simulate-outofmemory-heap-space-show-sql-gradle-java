@@ -9,6 +9,7 @@ import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.context.annotation.Import;
 import org.testcontainers.junit.jupiter.Testcontainers;
 
+import static org.assertj.core.api.Assertions.assertThatNoException;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 @DataJpaTest
@@ -27,5 +28,11 @@ class StudentJpaRepositoryTest {
                 .isInstanceOf(RuntimeException.class)
                 .hasCauseInstanceOf(OutOfMemoryError.class)
                 .hasMessage("java.lang.OutOfMemoryError: Java heap space");
+    }
+
+    @Test
+    @DisplayName("should be able to run")
+    void shouldBeAbleToRun() {
+        assertThatNoException().isThrownBy(() -> studentJpaRepository.findAllWithStream());
     }
 }
